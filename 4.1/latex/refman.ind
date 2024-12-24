@@ -1,0 +1,27 @@
+\begin{theindex}
+
+  \item {convert}
+    \subitem {modAlphaCipher}, \hyperpage{6}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {modAlphaCipher}, \hyperpage{7}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {modAlphaCipher}, \hyperpage{8}
+
+  \indexspace
+
+  \item {main.cpp}, \hyperpage{9}
+  \item {modAlphaCipher}, \hyperpage{5}
+    \subitem {convert}, \hyperpage{6}
+    \subitem {decrypt}, \hyperpage{7}
+    \subitem {encrypt}, \hyperpage{8}
+    \subitem {modAlphaCipher}, \hyperpage{6}
+  \item {modAlphaCipher.cpp}, \hyperpage{9}
+  \item {modAlphaCipher.h}, \hyperpage{10}
+
+\end{theindex}

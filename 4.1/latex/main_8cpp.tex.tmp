@@ -1,0 +1,64 @@
+\hypertarget{main_8cpp}{}\doxysection{Файл main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Точка входа для программы, использующей шифр Гронсвельда для шифровки и дешифровки текста.  
+
+
+{\ttfamily \#include \char`\"{}mod\+Alpha\+Cipher.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+% FIG 0
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8cpp_a846d60edc98fcf814616415ff9713ee4}{is\+Valid}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Проверяет, содержит ли строка только заглавные буквы алфавита и символ \textquotesingle{}Ё\textquotesingle{}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Основная функция программы. Реализует взаимодействие с пользователем для выполнения операций шифровки и дешифровки текста. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Точка входа для программы, использующей шифр Гронсвельда для шифровки и дешифровки текста. 
+
+\begin{DoxyAuthor}{Автор}
+Сочилов Н. М.
+\end{DoxyAuthor}
+\begin{DoxyDate}{Дата}
+19 декабря 2024 г. 
+\end{DoxyDate}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{main_8cpp_a846d60edc98fcf814616415ff9713ee4}\label{main_8cpp_a846d60edc98fcf814616415ff9713ee4}} 
+\index{main.cpp@{main.cpp}!isValid@{isValid}}
+\index{isValid@{isValid}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily bool is\+Valid (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Проверяет, содержит ли строка только заглавные буквы алфавита и символ \textquotesingle{}Ё\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Проверяемая строка. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если строка валидна; false если строка не валидна. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Основная функция программы. Реализует взаимодействие с пользователем для выполнения операций шифровки и дешифровки текста. 
+
+\begin{DoxyReturn}{Возвращает}
+Код завершения программы (0 -\/ успешное выполнение). 
+\end{DoxyReturn}
