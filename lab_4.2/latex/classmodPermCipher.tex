@@ -1,0 +1,178 @@
+\hypertarget{classmodPermCipher}{}\doxysection{Класс mod\+Perm\+Cipher}
+\label{classmodPermCipher}\index{modPermCipher@{modPermCipher}}
+
+
+Класс для шифрования и расшифрования текста с использованием шифра перестановок.  
+
+
+
+
+{\ttfamily \#include $<$mod\+Perm.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodPermCipher_a88250f04f19be777b948917b4c91640b}{mod\+Perm\+Cipher}} (const std\+::wstring \&skey)
+\begin{DoxyCompactList}\small\item\em Конструктор, инициализирующий ключ шифрования. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classmodPermCipher_ad4227d0d32f09cdc768098cbae8d9be8}{encrypt}} (const std\+::wstring \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Шифрование текста. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classmodPermCipher_ac23a698d8c984870b91b2f6eb182048c}{decrypt}} (const std\+::wstring \&cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Расшифрование текста. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodPermCipher_a04749bf1dd3c6c1f4207583ba33d64ab}{validate\+Key}} (const std\+::wstring \&\mbox{\hyperlink{classmodPermCipher_a7989a0ce7f7f3bdf61910325a235de78}{key}})
+\begin{DoxyCompactList}\small\item\em Валидация ключа. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmodPermCipher_aaf95e277265c9169de57412347d9202a}{validate\+Text}} (const std\+::wstring \&text)
+\begin{DoxyCompactList}\small\item\em Валидация текста перед шифрованием или расшифрованием. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodPermCipher_a25e3a2cb83ffc3085cf4d4fb2a3bda3a}\label{classmodPermCipher_a25e3a2cb83ffc3085cf4d4fb2a3bda3a}} 
+std\+::wstring \mbox{\hyperlink{classmodPermCipher_a25e3a2cb83ffc3085cf4d4fb2a3bda3a}{alphabet}}
+\begin{DoxyCompactList}\small\item\em Строка, представляющая алфавит для шифрования/расшифрования. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodPermCipher_a7989a0ce7f7f3bdf61910325a235de78}\label{classmodPermCipher_a7989a0ce7f7f3bdf61910325a235de78}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classmodPermCipher_a7989a0ce7f7f3bdf61910325a235de78}{key}}
+\begin{DoxyCompactList}\small\item\em Вектор, представляющий ключ шифрования. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для шифрования и расшифрования текста с использованием шифра перестановок. 
+
+Этот класс поддерживает шифрование и расшифрование текста на основе заданного ключа, который определяет смещения символов в алфавите. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classmodPermCipher_a88250f04f19be777b948917b4c91640b}\label{classmodPermCipher_a88250f04f19be777b948917b4c91640b}} 
+\index{modPermCipher@{modPermCipher}!modPermCipher@{modPermCipher}}
+\index{modPermCipher@{modPermCipher}!modPermCipher@{modPermCipher}}
+\doxysubsubsection{\texorpdfstring{modPermCipher()}{modPermCipher()}}
+{\footnotesize\ttfamily mod\+Perm\+Cipher\+::mod\+Perm\+Cipher (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{skey }\end{DoxyParamCaption})}
+
+
+
+Конструктор, инициализирующий ключ шифрования. 
+
+Этот метод принимает ключ в виде строки и преобразует его в вектор целых чисел. 
+\begin{DoxyParams}{Аргументы}
+{\em skey} & Строка, представляющая ключ для шифрования. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::invalid\+\_\+argument} & Если ключ пустой или содержит недопустимые символы.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em skey} & Строка, представляющая ключ для шифрования. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::invalid\+\_\+argument} & Если ключ пуст или содержит недопустимые символы. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classmodPermCipher_ac23a698d8c984870b91b2f6eb182048c}\label{classmodPermCipher_ac23a698d8c984870b91b2f6eb182048c}} 
+\index{modPermCipher@{modPermCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!modPermCipher@{modPermCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::wstring mod\+Perm\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{cipher\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Расшифрование текста. 
+
+Применяет обратные смещения, заданные ключом, к зашифрованному тексту. 
+\begin{DoxyParams}{Аргументы}
+{\em cipher\+\_\+text} & Зашифрованный текст для расшифрования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::invalid\+\_\+argument} & Если текст не валиден. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmodPermCipher_ad4227d0d32f09cdc768098cbae8d9be8}\label{classmodPermCipher_ad4227d0d32f09cdc768098cbae8d9be8}} 
+\index{modPermCipher@{modPermCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!modPermCipher@{modPermCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::wstring mod\+Perm\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{open\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Шифрование текста. 
+
+Применяет смещения, заданные ключом, к открытом тексту. 
+\begin{DoxyParams}{Аргументы}
+{\em open\+\_\+text} & Открытый текст для шифрования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::invalid\+\_\+argument} & Если текст не валиден. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmodPermCipher_a04749bf1dd3c6c1f4207583ba33d64ab}\label{classmodPermCipher_a04749bf1dd3c6c1f4207583ba33d64ab}} 
+\index{modPermCipher@{modPermCipher}!validateKey@{validateKey}}
+\index{validateKey@{validateKey}!modPermCipher@{modPermCipher}}
+\doxysubsubsection{\texorpdfstring{validateKey()}{validateKey()}}
+{\footnotesize\ttfamily void mod\+Perm\+Cipher\+::validate\+Key (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{skey }\end{DoxyParamCaption})}
+
+
+
+Валидация ключа. 
+
+Проверяет, что ключ состоит только из цифр и является положительным целым числом. 
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ для валидации. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::invalid\+\_\+argument} & Если ключ содержит недопустимые символы или является неположительным.\\
+\hline
+\end{DoxyExceptions}
+Проверяет, что ключ состоит только из цифр и является положительным целым числом.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em skey} & Ключ для валидации. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::invalid\+\_\+argument} & Если ключ содержит недопустимые символы или является неположительным. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmodPermCipher_aaf95e277265c9169de57412347d9202a}\label{classmodPermCipher_aaf95e277265c9169de57412347d9202a}} 
+\index{modPermCipher@{modPermCipher}!validateText@{validateText}}
+\index{validateText@{validateText}!modPermCipher@{modPermCipher}}
+\doxysubsubsection{\texorpdfstring{validateText()}{validateText()}}
+{\footnotesize\ttfamily void mod\+Perm\+Cipher\+::validate\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Валидация текста перед шифрованием или расшифрованием. 
+
+Проверяет, что текст не пустой и содержит только допустимые символы. 
+\begin{DoxyParams}{Аргументы}
+{\em text} & Текст для валидации. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em std\+::invalid\+\_\+argument} & Если текст пустой или содержит недопустимые символы. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+mod\+Perm.\+h\item 
+mod\+Perm.\+cpp\end{DoxyCompactItemize}

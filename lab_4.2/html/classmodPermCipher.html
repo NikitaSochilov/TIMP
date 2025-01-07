@@ -1,0 +1,309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Project C++: Класс modPermCipher</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Project C++
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="classmodPermCipher-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс modPermCipher</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для шифрования и расшифрования текста с использованием шифра перестановок.  
+ <a href="classmodPermCipher.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="modPerm_8h_source.html">modPerm.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a88250f04f19be777b948917b4c91640b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodPermCipher.html#a88250f04f19be777b948917b4c91640b">modPermCipher</a> (const std::wstring &amp;skey)</td></tr>
+<tr class="memdesc:a88250f04f19be777b948917b4c91640b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор, инициализирующий ключ шифрования.  <a href="classmodPermCipher.html#a88250f04f19be777b948917b4c91640b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a88250f04f19be777b948917b4c91640b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4227d0d32f09cdc768098cbae8d9be8"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodPermCipher.html#ad4227d0d32f09cdc768098cbae8d9be8">encrypt</a> (const std::wstring &amp;open_text)</td></tr>
+<tr class="memdesc:ad4227d0d32f09cdc768098cbae8d9be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шифрование текста.  <a href="classmodPermCipher.html#ad4227d0d32f09cdc768098cbae8d9be8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad4227d0d32f09cdc768098cbae8d9be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23a698d8c984870b91b2f6eb182048c"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodPermCipher.html#ac23a698d8c984870b91b2f6eb182048c">decrypt</a> (const std::wstring &amp;cipher_text)</td></tr>
+<tr class="memdesc:ac23a698d8c984870b91b2f6eb182048c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расшифрование текста.  <a href="classmodPermCipher.html#ac23a698d8c984870b91b2f6eb182048c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac23a698d8c984870b91b2f6eb182048c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04749bf1dd3c6c1f4207583ba33d64ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodPermCipher.html#a04749bf1dd3c6c1f4207583ba33d64ab">validateKey</a> (const std::wstring &amp;<a class="el" href="classmodPermCipher.html#a7989a0ce7f7f3bdf61910325a235de78">key</a>)</td></tr>
+<tr class="memdesc:a04749bf1dd3c6c1f4207583ba33d64ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Валидация ключа.  <a href="classmodPermCipher.html#a04749bf1dd3c6c1f4207583ba33d64ab">Подробнее...</a><br /></td></tr>
+<tr class="separator:a04749bf1dd3c6c1f4207583ba33d64ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf95e277265c9169de57412347d9202a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodPermCipher.html#aaf95e277265c9169de57412347d9202a">validateText</a> (const std::wstring &amp;text)</td></tr>
+<tr class="memdesc:aaf95e277265c9169de57412347d9202a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Валидация текста перед шифрованием или расшифрованием.  <a href="classmodPermCipher.html#aaf95e277265c9169de57412347d9202a">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaf95e277265c9169de57412347d9202a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a25e3a2cb83ffc3085cf4d4fb2a3bda3a"><td class="memItemLeft" align="right" valign="top"><a id="a25e3a2cb83ffc3085cf4d4fb2a3bda3a"></a>
+std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodPermCipher.html#a25e3a2cb83ffc3085cf4d4fb2a3bda3a">alphabet</a></td></tr>
+<tr class="memdesc:a25e3a2cb83ffc3085cf4d4fb2a3bda3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка, представляющая алфавит для шифрования/расшифрования. <br /></td></tr>
+<tr class="separator:a25e3a2cb83ffc3085cf4d4fb2a3bda3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7989a0ce7f7f3bdf61910325a235de78"><td class="memItemLeft" align="right" valign="top"><a id="a7989a0ce7f7f3bdf61910325a235de78"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodPermCipher.html#a7989a0ce7f7f3bdf61910325a235de78">key</a></td></tr>
+<tr class="memdesc:a7989a0ce7f7f3bdf61910325a235de78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вектор, представляющий ключ шифрования. <br /></td></tr>
+<tr class="separator:a7989a0ce7f7f3bdf61910325a235de78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для шифрования и расшифрования текста с использованием шифра перестановок. </p>
+<p>Этот класс поддерживает шифрование и расшифрование текста на основе заданного ключа, который определяет смещения символов в алфавите. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a88250f04f19be777b948917b4c91640b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88250f04f19be777b948917b4c91640b">&#9670;&nbsp;</a></span>modPermCipher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">modPermCipher::modPermCipher </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>skey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор, инициализирующий ключ шифрования. </p>
+<p>Этот метод принимает ключ в виде строки и преобразует его в вектор целых чисел. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">skey</td><td>Строка, представляющая ключ для шифрования. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Если ключ пустой или содержит недопустимые символы.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">skey</td><td>Строка, представляющая ключ для шифрования. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Если ключ пуст или содержит недопустимые символы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ac23a698d8c984870b91b2f6eb182048c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23a698d8c984870b91b2f6eb182048c">&#9670;&nbsp;</a></span>decrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring modPermCipher::decrypt </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>cipher_text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расшифрование текста. </p>
+<p>Применяет обратные смещения, заданные ключом, к зашифрованному тексту. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cipher_text</td><td>Зашифрованный текст для расшифрования. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расшифрованный текст. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Если текст не валиден. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad4227d0d32f09cdc768098cbae8d9be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4227d0d32f09cdc768098cbae8d9be8">&#9670;&nbsp;</a></span>encrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring modPermCipher::encrypt </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>open_text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шифрование текста. </p>
+<p>Применяет смещения, заданные ключом, к открытом тексту. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">open_text</td><td>Открытый текст для шифрования. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Зашифрованный текст. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Если текст не валиден. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a04749bf1dd3c6c1f4207583ba33d64ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04749bf1dd3c6c1f4207583ba33d64ab">&#9670;&nbsp;</a></span>validateKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modPermCipher::validateKey </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>skey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Валидация ключа. </p>
+<p>Проверяет, что ключ состоит только из цифр и является положительным целым числом. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Ключ для валидации. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Если ключ содержит недопустимые символы или является неположительным.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Проверяет, что ключ состоит только из цифр и является положительным целым числом.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">skey</td><td>Ключ для валидации. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Если ключ содержит недопустимые символы или является неположительным. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf95e277265c9169de57412347d9202a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf95e277265c9169de57412347d9202a">&#9670;&nbsp;</a></span>validateText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modPermCipher::validateText </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Валидация текста перед шифрованием или расшифрованием. </p>
+<p>Проверяет, что текст не пустой и содержит только допустимые символы. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Текст для валидации. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Если текст пустой или содержит недопустимые символы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="modPerm_8h_source.html">modPerm.h</a></li>
+<li>modPerm.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

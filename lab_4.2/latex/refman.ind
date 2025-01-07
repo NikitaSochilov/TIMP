@@ -1,0 +1,27 @@
+\begin{theindex}
+
+  \item {decrypt}
+    \subitem {modPermCipher}, \hyperpage{4}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {modPermCipher}, \hyperpage{5}
+
+  \indexspace
+
+  \item {modPermCipher}, \hyperpage{3}
+    \subitem {decrypt}, \hyperpage{4}
+    \subitem {encrypt}, \hyperpage{5}
+    \subitem {modPermCipher}, \hyperpage{4}
+    \subitem {validateKey}, \hyperpage{5}
+    \subitem {validateText}, \hyperpage{6}
+
+  \indexspace
+
+  \item {validateKey}
+    \subitem {modPermCipher}, \hyperpage{5}
+  \item {validateText}
+    \subitem {modPermCipher}, \hyperpage{6}
+
+\end{theindex}
